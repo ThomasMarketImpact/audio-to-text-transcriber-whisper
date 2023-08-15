@@ -4,7 +4,6 @@ Notetaker is a program that can transcribe audio files in various formats to tex
 
 ## Features
 Supports various audio formats including mp3, m4a, wav, ogg etc.
-Automatically splits long audio files into chunks for transcription.
 Saves the transcribed text to output .txt files.
 Easy to customize - change model type, max length, output folders etc.
 
