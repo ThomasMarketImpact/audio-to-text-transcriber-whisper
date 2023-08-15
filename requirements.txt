@@ -1,0 +1,33 @@
+# Core dependencies
+python>=3.6
+numpy
+
+# Audio processing
+pydub # For audio file conversion
+librosa # Useful for audio file processing if needed
+
+# Whisper for speech recognition
+whisper==1.0 # Example, replace with actual Whisper package name
+
+# OpenAI GPT-3 API client 
+openai==0.24.0
+
+# JSON operations
+json
+
+# Filesystem operations
+os 
+shutil
+
+# Logging
+logging
+
+# Dataframe operations
+pandas 
+
+# Multiprocessing
+multiprocessing
+
+# additional useful packages
+tqdm # Progress bars
+click # For command line interface
