@@ -1,5 +1,3 @@
-Here is a draft README.md for the Notetaker program:
-
 # Notetaker
 
 Notetaker is a program that can transcribe audio files in various formats to text using Whisper. It converts input audio files to WAV format, splits long files into chunks, transcribes each chunk using Whisper, and saves the output as a text file.
