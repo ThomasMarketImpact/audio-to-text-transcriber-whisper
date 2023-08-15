@@ -2,6 +2,12 @@
 
 Notetaker is a program that can transcribe audio files in various formats to text using Whisper. It converts input audio files to WAV format, splits long files into chunks, transcribes each chunk using Whisper, and saves the output as a text file.
 
+## Features
+Supports various audio formats including mp3, m4a, wav, ogg etc.
+Automatically splits long audio files into chunks for transcription.
+Saves the transcribed text to output .txt files.
+Easy to customize - change model type, max length, output folders etc.
+
 ## Files
 
 - `main.py` - The main driver program. Creates instance of Notetaker and calls transcribe_audio_files()
@@ -26,11 +32,25 @@ Notetaker is a program that can transcribe audio files in various formats to tex
 - To change maximum audio length, modify `MAX_LENGTH` in `whisper_transcriber.py`  
 - To customize Whisper arguments, modify `construct_args()` in `whisper_transcriber.py`
 
-## Requirements
+## Command Line Arguments
 
-- Python 3.7+ 
-- Whisper
-- Pydub
-- Torch
+--input_folder PATH     Folder path containing audio files to transcribe
+--output_folder PATH    Folder path to save transcribed .txt files  
+--model_type TYPE       Whisper model type (base, small, medium, large)
 
-Please let me know if you would like me to expand or modify the README further.
+## Prerequisites
+Python 3.7
+Whisper 1.0
+Pydub 0.24.1
+Torch 1.8.1
+
+## Limitations
+Only supports English language transcription currently.
+Automated speech recognition accuracy depends on audio quality.
+Large audio files are memory intensive to process.
+
+## Contributing
+Contributions are welcome! Please create an issue or PR on GitHub.
+
+## Author
+Thomas Byrnes
